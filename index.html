@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ranjith Kumar - Cyber Security Professional</title>
+  <style>
+    /* Container for the website */
+    .container {
+      width: 100%;
+      height: 100vh;
+      background-color: #000;
+      overflow: hidden;
+    }
+
+    /* Glowing lights */
+    .light {
+      width: 20px;
+      height: 20px;
+      background-color: #0f0;
+      border-radius: 50%;
+      position: absolute;
+      animation: glowing 1s infinite;
+    }
+
+    /* Animation - Glowing */
+    @keyframes glowing {
+      0% {
+        box-shadow: 0 0 5px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+      }
+      50% {
+        box-shadow: 0 0 20px #0f0, 0 0 30px #0f0, 0 0 50px #0f0;
+      }
+      100% {
+        box-shadow: 0 0 5px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+      }
+    }
+
+    /* Terminal Animation */
+    .terminal {
+      width: 500px;
+      height: 700px;
+      background-color: #000;
+      color: #0f0;
+      padding: 20px;
+      margin: 100px auto;
+      position: relative;
+      overflow: hidden;
+      font-family: monospace;
+    }
+
+    /* Slide Animation */
+    .slide {
+      animation: slide 10s infinite;
+    }
+
+    /* Hover Animation */
+    .hover {
+      transition: transform 10.3s ease-in-out;
+    }
+
+    .hover:hover {
+      transform: scale(50.1);
+    }
+
+    /* Animation Keyframes - Slide */
+    @keyframes slide {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Animation Keyframes - Terminal */
+    @keyframes terminal {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="light" style="top: 50px; left: 50px;"></div>
+    <div class="light" style="top: 100px; left: 200px;"></div>
+    <div class="light" style="top: 200px; left: 100px;"></div>
+    <div class="light" style="top: 300px; left: 300px;"></div>
+    <div class="terminal slide">
+      <h1>Welcome to Ranjith Kumar's Cyber Security Website</h1>
+      <p>Name: Ranjith Kumar</p>
+      <p>Age: 22</p>
+      <p>Qualifications: BCA</p>
+      <p>Skills: CEH, CHFI, CISSP, Windows Server, Cisco</p>
+      <p>Connect with me to discuss your cyber security needs!</p>
+    </div>
+  </div>
+</div>
